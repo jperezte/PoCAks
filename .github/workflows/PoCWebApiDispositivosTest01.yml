@@ -11,7 +11,7 @@ env:
   WORKING_DIRECTORY: WebApiDispositivos
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET SDK
@@ -32,7 +32,7 @@ jobs:
         name: webapp
         path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build
     steps:
     - name: Download artifact from build job
