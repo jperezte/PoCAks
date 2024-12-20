@@ -8,7 +8,7 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: WebApiDispositivos/publish
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 8.0.x
-  WORKING_DIRECTORY: WebApiDispositivos
+  WORKING_DIRECTORY: src/WebApiDispositivos
 jobs:
   build:
     runs-on: ubuntu-24.04
